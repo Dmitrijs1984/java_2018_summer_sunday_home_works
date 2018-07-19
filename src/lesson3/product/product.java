@@ -1,7 +1,5 @@
 package lesson3.product;
 
-import java.math.BigDecimal;
-
 class Product {
     String name;
     float regularPrice;
@@ -24,7 +22,6 @@ class Product {
     public int getDiscount() {
         return discount;
     }
-
 
     float getActualPrice(float regularPrice, int discount) {
         float actualPrice = regularPrice * (1 - (float) discount / 100);
