@@ -10,18 +10,16 @@ public class product_demo {
         float regularPrice = 0.80f;
         int discount = 20;
 
-        lesson3.product.Product firstProduct = new lesson3.product.Product(name, regularPrice, discount);
+        Product firstProduct = new Product(name, regularPrice, discount);
 
-        lesson3.product.Product secondProduct = new lesson3.product.Product("Pienas", 1.23f, 50);
+        Product secondProduct = new Product("Pienas", 1.23f, 50);
 
         float firstProductActualPrice = firstProduct.getActualPrice(firstProduct.regularPrice, firstProduct.discount);
         float secondProductActualPrice = secondProduct.getActualPrice(secondProduct.regularPrice, secondProduct.discount);
 
-        BigDecimal changedNumber = new BigDecimal(firstProductActualPrice);
-        changedNumber =changedNumber.setScale(2,RoundingMode.HALF_UP);
-
-        System.out.println("firstProductActualPrice ==> " + firstProductActualPrice);
-        System.out.println("secondProductActualPrice ==> " + secondProductActualPrice);
-        System.out.println(changedNumber);
+        System.out.print("firstProductActualPrice ==> ");
+        firstProduct.changeNumberType(firstProductActualPrice);
+        System.out.print("secondProductActualPrice ==> ");
+        secondProduct.changeNumberType(secondProductActualPrice);
     }
 }

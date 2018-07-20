@@ -1,5 +1,8 @@
 package lesson3.product;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 class Product {
     String name;
     float regularPrice;
@@ -25,8 +28,12 @@ class Product {
 
     float getActualPrice(float regularPrice, int discount) {
         float actualPrice = regularPrice * (1 - (float) discount / 100);
-        System.out.println(1 - (float) discount / 100);
         return actualPrice;
+    }
+    void changeNumberType(float number){
+        BigDecimal changedNumber = new BigDecimal(number);
+        changedNumber =changedNumber.setScale(2,RoundingMode.HALF_UP);
+        System.out.println(changedNumber);
     }
 
 }
