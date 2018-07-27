@@ -33,7 +33,7 @@ public class SmartWalletTest {
     int balance(int pin) {
         if (pin == correctPin) {
             return amount;
-            xxx = true;
+          //  xxx = true;
         } else xxx = false;
 
         return 0;
@@ -42,4 +42,4 @@ public class SmartWalletTest {
 
 //boolean redraw
 //int balance (pin)
-}
+
