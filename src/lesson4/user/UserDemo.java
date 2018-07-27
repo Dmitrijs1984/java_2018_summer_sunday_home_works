@@ -7,6 +7,7 @@ public class UserDemo {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter nickname:");
         String userNickname = scanner.next();
+
         System.out.println("Please enter password:");
         String userPassword = scanner.next();
 

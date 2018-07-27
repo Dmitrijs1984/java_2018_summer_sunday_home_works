@@ -4,7 +4,7 @@ import lesson4.waveLength.LightColorDetector;
 
 import java.util.Scanner;
 
-public class LightColorDetectorTest {
+public class LightColorDetectorDemo {
     public static void main(String[] args) {
         System.out.println("Please enter waveLength: ");
         Scanner scanner = new Scanner(System.in);
