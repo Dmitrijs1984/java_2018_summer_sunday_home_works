@@ -10,4 +10,3 @@ public class UserDemo {
         userDataCheck.toStringg();
     }
 }
-// smart wallte
