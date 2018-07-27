@@ -1,4 +1,4 @@
-package lesson4.smartWallet;
+package lesson5.smartWallet;
 
 public class SmartWallet {
 }
