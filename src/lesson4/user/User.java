@@ -14,6 +14,7 @@ public class User {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter nickname:");
         String userNickname = scanner.nextLine();
+        nickname = userNickname;
         return userNickname;
     }
 
@@ -31,7 +32,7 @@ public class User {
             String up = userEnterPassword();
 
             if (correctPassword.equals(password) && loginAttemptsLeft > 0) {
-                loginAttemptsLeft = 3;
+                //loginAttemptsLeft = 3;
                 blocked = false;
                 System.out.println("Correct passwords. Loading. Please wait...");
             } else if (password != correctPassword && loginAttemptsLeft > 0) {
@@ -44,9 +45,13 @@ public class User {
             }
         }
         return blocked;
+    }
 
 
-        // private void toStringg () {
+    void toStringg() {
+        System.out.println("User nickname: " + nickname);
+        System.out.println("User password: " + password);
+        System.out.println("Login attempts left: " + loginAttemptsLeft + "(3)");
     }
 }
 
