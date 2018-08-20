@@ -1,5 +1,7 @@
 package lesson6.car;
 
+import lesson6.car.Car;
+
 public class CarDemo {
     public static void main(String[] args) {
         Car car = new Car();
