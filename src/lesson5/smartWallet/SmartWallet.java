@@ -1,7 +1,7 @@
 package lesson5.smartWallet;
 
 public class SmartWallet {
-//mn
+    //mn
     int correctPin = 123;
     int amount = 0;
     boolean userAccept = false;
@@ -33,10 +33,9 @@ public class SmartWallet {
 
     int balance(int pin) {
         if (pin == correctPin) {
-            userAccept=true;
+            userAccept = true;
             return amount;
         } else userAccept = false;
-
         return 0;
     }
 }
