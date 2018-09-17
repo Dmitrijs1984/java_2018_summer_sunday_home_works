@@ -4,9 +4,6 @@ public class CheckPlayerToWin {
 
     boolean playerWinGame = false;
 
-   // GameBoard gameBoard= new GameBoard();
-   // String[][] gameTable = gameBoard.gameTable;
-
     void checkToWin(String[][] gameTable) {
         for (int i = 0; i < gameTable.length; i++) {
             for (int j = 0; j < gameTable[i].length - 3; j++) {

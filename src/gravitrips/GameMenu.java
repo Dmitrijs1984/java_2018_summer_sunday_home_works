@@ -2,7 +2,7 @@ package gravitrips;
 
 import java.util.Scanner;
 
-public class GameType {
+public class GameMenu {
     void chooseGameType() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("1. Player VS Player ");
@@ -15,5 +15,4 @@ public class GameType {
             playerOrComputerMoveMaking.playerVsComputer();
         }
     }
-
 }

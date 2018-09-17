@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Gravitrips {
     boolean validMove = false;
 
-    void floorRowDisappears(String gameTable[][],int[] columnElementsCounter) {
+    void floorRowDisappears(String gameTable[][], int[] columnElementsCounter) {
         int fullFloorRowCounter = 0;
         for (int k = 0; k < columnElementsCounter.length; k++) {
             if (columnElementsCounter[k] > 0) {
@@ -26,7 +26,8 @@ public class Gravitrips {
         }
     }
 
-GameBoard gameBoard= new GameBoard();
+    GameBoard gameBoard = new GameBoard();
+
     void playerValidMoveCheck() {
         // valid na cislo
         // valid na counter
