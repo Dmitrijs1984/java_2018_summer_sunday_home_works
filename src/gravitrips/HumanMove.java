@@ -13,7 +13,7 @@ public class HumanMove extends Player {
         GameBoard gameBoard = new GameBoard();
 
         gameBoard.columnElementsCounter[userChoiseColumn - 1]++;
-        gameBoard.gameTable[gameBoard.gameTable.length - gameBoard.columnElementsCounter[userChoiseColumn - 1]][userChoiseColumn - 1] = actualUserSymbol;
+   //     gameBoard.gameTable[gameBoard.gameTable.length - gameBoard.columnElementsCounter[userChoiseColumn - 1]][userChoiseColumn - 1] = actualUserSymbol;
 
     }
 }
